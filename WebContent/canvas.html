@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<link rel="stylesheet" href="custom-theme2/jquery-ui-1.8.23.custom.css" type="text/css"/>
+<link rel="stylesheet" href="jquery-ui-1.9.0-rc.1/themes/base/jquery.ui.tooltip.css" type="text/css"/>
+<link rel="stylesheet" href="css/base-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/studio.css" type="text/css"/>
+<link rel="stylesheet" href="css/handlers.css" type="text/css"/>
+<link rel="stylesheet" href="css/menu.css" type="text/css"/>
+
+<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.ui.tooltip.js"></script>-->
+
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.9.0-rc.1/ui/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.fileDownload.js"></script>
+
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/getpost.js"></script>
+<script type="text/javascript" src="js/handlers.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/userManagement.js"></script>
+</head>
+<body>
+<div id="header">
+	<div id="header-container" class="fixed-width">
+		<div id="topbar-container">
+			<div style="font-size: 150%; display:inline-block; background-color: darkblue; width: 200px; height: 100%;text-align:center">
+				<a href="index.html">(LOGO)</a>
+			</div>	
+		</div>
+		
+		<div id="controlPanelContainer"></div>
+	</div>
+</div>
+<div id="content-container" class="fixed-width">
+	<div id="studio-menu-container">
+		<div id="clearButton" class="studio-menu-item" data-tooltiptext="Clear the canvas, then fill with the background colour"><span class="studio-menu-item-icon">Cl</span></div>
+		<div id="bgButton" class="studio-menu-item" data-tooltiptext="Set the background colour"><span class="studio-menu-item-icon">BG</span></div>
+		<div class="studio-menu-spacer"></div>
+		<div id="pointButton" class="studio-menu-item" data-tooltiptext="Draw a shape"><span class="studio-menu-item-icon">Sh</span></div>
+		<div id="lineButton" class="studio-menu-item" data-tooltiptext="Draw a line"><span class="studio-menu-item-icon">Li</span></div>
+		<div id="brushButton" class="studio-menu-item" data-tooltiptext="Draw a brush stroke"><span class="studio-menu-item-icon">Br</span></div>
+		<div id="dropButton" class="studio-menu-item" data-tooltiptext="Drop paint"><span class="studio-menu-item-icon">Dr</span></div>
+		<div id="throwButton" class="studio-menu-item" data-tooltiptext="Throw paint"><span class="studio-menu-item-icon">Th</span></div>
+	</div>
+
+	<div id="studio-canvas-container">
+		<div id="studio-toolbar-container">
+		</div>
+		<div id="canvas-container">
+			<img id="output" style="width:1024px; height: 1024px;">
+			<canvas id="canvas" style="position: absolute; top: -1px; left: -1px; z-index:1;" width="1024" height="1024">
+			</canvas>
+			<div id="loading-overlay"></div>
+		</div>
+	</div>
+	
+	<div id="paletteContainer">
+		<div id="saveImageDiv">
+			<button id="saveImageButton">Save Image</button>
+		</div>
+		<canvas id="palette" width="192" height="300">
+		</canvas>
+		<div id="saveColorButton"></div>
+		<div id="bgColorHelper" data-tooltiptext="Background colour"></div>
+		<div>
+			<div id="opacitySlider" style="font-size:75%; width: 95%; margin-left: auto; margin-right: auto;"></div>
+			<div style="width: 95%; margin-left: auto; margin-right: auto;"><span>Opacity: </span><span id="opacitySliderText">100%</span></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

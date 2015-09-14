@@ -1,0 +1,59 @@
+.canvas-gallery{
+	width: 100%;
+	border: 1px solid #18658B;
+	position: relative;
+}
+
+.canvas-gallery-label a{
+	float:right;
+	font-size: 58% !important;
+}
+
+.canvas-gallery-label{
+	margin-bottom: 10px;
+}
+
+.gallery-item{
+	width: 243px;
+	height: 250px;;
+	display: inline-block;
+	vertical-align: top;	
+}
+
+.gallery-image-container{
+	text-align: center;
+}
+
+.gallery-placeholder{
+	width: 192px;
+	height: 192px;
+	margin: 5px auto;
+	border: 1px solid #18658B;
+	padding: 1px;
+	background-image: url('../img/loading-spinner.gif');
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.gallery-image{
+	max-width: 192px;
+	max-height: 192px;
+	margin: 5px auto;
+	border: 1px solid #18658B;
+	padding: 1px;
+}
+
+.gallery-bottom-bar-container{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.gallery-bottom-bar{
+	display: inline-block;
+}
+
+.gallery-nav-arrow{
+	cursor:pointer;
+}

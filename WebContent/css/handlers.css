@@ -1,0 +1,22 @@
+.toolbar-div {
+	margin-left: 10px;
+	font-size: 75%;
+	padding-top: 10px;
+}
+
+.tool-container-div {
+	display: inline-block;
+	margin-right: 18px;
+	vertical-align: top;
+}
+
+.slider{
+	width: 110px;
+	font-size: 75%;
+	margin-top: 5px;
+}
+
+.radio-set-container {
+	padding-top: 5px;
+	font-size: 75%;	
+}

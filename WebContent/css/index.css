@@ -1,0 +1,20 @@
+#content-container a {
+	font-weight: bold;
+}
+
+#welcomeDiv{
+	margin-bottom: 50px;
+}
+
+.gallery-container{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+#noRecentDiv{
+	padding: 5px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+}

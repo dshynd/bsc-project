@@ -1,0 +1,43 @@
+input[type="submit"] {
+	font-size: 75%;
+	margin-top: 10px;
+}
+
+label {
+	font-size: 75%;
+}
+
+button {
+	font-size: 75% !important;
+}
+
+#inputDiv{
+	display: inline-block;
+}
+
+.form-container form, 
+.form-container form div,
+.form-container input{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.form-container form{
+	width: 300px;
+}
+
+.form-container input{
+	width: 80%;
+}
+
+.form-container span{
+	font-weight: bold;
+	font-size: 130%;
+}
+
+.form-container div {
+	width: 80%;
+	font-size: 80%;
+	margin-top: 10px;
+	padding: 5px;
+}

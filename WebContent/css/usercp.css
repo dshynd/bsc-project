@@ -1,0 +1,24 @@
+#usernameInfoDiv{
+	font-weight: bold;
+	font-size: 130%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-style: italic;
+}
+
+#changePWDiv{
+	display:inline-block;
+	width: 300px;
+}
+
+#canvasesDiv{
+	display: inline-block;
+	width: 975px;
+	font-weight: bold;
+	font-size: 130%;
+	vertical-align: top;
+}
+
+#canvasGallery{
+	height: 750px;
+}
